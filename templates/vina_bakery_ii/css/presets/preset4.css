@@ -1,0 +1,538 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:not(.btn) {
+  color: #b4440a;
+}
+a:not(.btn):hover {
+  color: #f37331;
+}
+.color-page {
+  color: #f37331;
+}
+#sp-search .search form #mod-search-searchword {
+  border: 5px solid #f37331;
+}
+#sp-search .search form input[type="text"]:focus {
+  box-shadow: 8px 0 0 #f37331 inset;
+}
+#sp-search .search form .btn {
+  background: #f37331;
+  color: #fff;
+}
+#sp-search .search form .btn:after {
+  background: #000;
+}
+#sp-search .search form .btn:hover,
+#sp-search .search form .btn:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+#sp-search .search form .btn:hover .icon-search {
+  color: #f37331;
+}
+#sp-top-wrapper {
+  border-bottom: 2px solid #f37331;
+}
+#sp-top-wrapper .tcvn-header-top-marquee span.vina-br {
+  background: url("../../images/presets/preset4/vinabr.png") no-repeat;
+}
+.vina_social ul {
+  margin: 0;
+}
+.vina_social ul a {
+  background: #f37331;
+  border: 4px solid #f9b591;
+}
+.vina_social ul a:hover {
+  border: 4px solid #f37331;
+}
+.vina_social ul a:hover em:before {
+  color: #f37331;
+}
+#sp-header-wrapper .logo {
+  background-image: url(../../images/presets/preset4/logo.png);
+}
+#sp-feature-wrapper {
+  background-color: #f37331;
+}
+#sp-feature-wrapper.vina-feature:before {
+  background-color: #fff;
+  background-image: linear-gradient(45deg,#f37331 25%,transparent 25%,transparent), linear-gradient(-45deg,#f37331 25%,transparent 25%,transparent), linear-gradient(45deg,transparent 100%,#f37331 100%), linear-gradient(-45deg,transparent 92%,#f37331 39%);
+}
+#sp-feature-wrapper.vina-feature:after {
+  background-image: linear-gradient(180deg,#f37331 25%,transparent 25%,transparent), linear-gradient(-108deg,#f37331 25%,transparent 25%,transparent), linear-gradient(90deg,transparent 75%,#f37331 75%), linear-gradient(-180deg,transparent 75%,#f37331 75%);
+  background-color: transparent;
+}
+.vina_mncontact li a {
+  color: #fff;
+}
+.vina_mncontact li a:hover,
+.vina_mncontact li a:focus {
+  color: #f37331;
+}
+.vina_mncontact li.active a {
+  color: #f37331;
+}
+.vina_mncontact li.active a:hover,
+.vina_mncontact li.active a:focus {
+  color: #f37331;
+}
+.tcvn-slit-slider .sl-slider-wrapper h2 span {
+  color: #f37331;
+}
+.tcvn-slit-slider .sl-slider-wrapper .bg-img .slit-text .buttonlight.morebutton {
+  background: #f37331;
+  color: #fff;
+}
+.tcvn-slit-slider .sl-slider-wrapper .bg-img .slit-text .buttonlight.morebutton:after {
+  background: #000;
+}
+.tcvn-slit-slider .sl-slider-wrapper .bg-img .slit-text .buttonlight.morebutton:hover,
+.tcvn-slit-slider .sl-slider-wrapper .bg-img .slit-text .buttonlight.morebutton:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+.tcvn-slit-slider .sl-slider-wrapper .nav-arrows span.nav-arrow-prev {
+  background-image: url(../../images/presets/preset4/prev.png);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  border: 0;
+  height: 56px;
+  width: 56px;
+  left: 2%;
+}
+.tcvn-slit-slider .sl-slider-wrapper .nav-arrows span.nav-arrow-prev:hover {
+  background-image: url(../../images/presets/preset4/prev_hover.png);
+}
+.tcvn-slit-slider .sl-slider-wrapper .nav-arrows span.nav-arrow-next {
+  background-image: url(../../images/presets/preset4/next.png);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  border: 0;
+  height: 56px;
+  width: 56px;
+  right: 2%;
+}
+.tcvn-slit-slider .sl-slider-wrapper .nav-arrows span.nav-arrow-next:hover {
+  background-image: url(../../images/presets/preset4/next_hover.png);
+}
+.tcvn-slit-slider .sl-slider-wrapper .nav-dots span {
+  height: 23px;
+  width: 23px;
+}
+.tcvn-slit-slider .sl-slider-wrapper .nav-dots span.nav-dot-current:after {
+  background-image: url(../../images/presets/preset4/button_hover.png);
+  height: 23px;
+  width: 23px;
+  left: 0;
+  top: 0;
+}
+.vina-testimonal .carousel-control.left,
+.vina-testimonal .carousel-control.right {
+  background: #f37331;
+}
+.tcvn-scroller-k2.theme1 .toolbar .left:hover i:before,
+.tcvn-scroller-k2.theme1 .toolbar .right:hover i:before {
+  color: #f37331;
+}
+.vina-subscribe .input-append .btn {
+  background: #000;
+  color: #fff;
+}
+.vina-subscribe .input-append .btn:after {
+  background: #b4440a;
+}
+.vina-subscribe .input-append .btn:hover,
+.vina-subscribe .input-append .btn:focus {
+  color: #fff;
+  background-color: #000;
+}
+.vina-subscribe input[type="text"]:focus {
+  box-shadow: 8px 0 0 #f37331 inset;
+}
+.sp-user .ic {
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.sp-user .circle1 {
+  background: url("../../images/presets/preset4/user1.png") no-repeat #f37331;
+  background-position: center right;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.sp-user .circle2 {
+  background: url("../../images/presets/preset4/user2.png") no-repeat #f37331;
+  background-position: center right;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.sp-user .circle3 {
+  background: url("../../images/presets/preset4/user3.png") no-repeat #f37331;
+  background-position: center right;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.sp-user .circle4 {
+  background: url("../../images/presets/preset4/user4.png") no-repeat #f37331;
+  background-position: center right;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.sp-user .users-text h4 {
+  color: #f37331;
+}
+.sp-user:hover .circle1 {
+  background: url("../../images/presets/preset4/user1.png") no-repeat #E0E0E0;
+  background-position: center left;
+}
+.sp-user:hover .circle2 {
+  background: url("../../images/presets/preset4/user2.png") no-repeat #E0E0E0;
+  background-position: center left;
+}
+.sp-user:hover .circle3 {
+  background: url("../../images/presets/preset4/user3.png") no-repeat #E0E0E0;
+  background-position: center left;
+}
+.sp-user:hover .circle4 {
+  background: url("../../images/presets/preset4/user4.png") no-repeat #E0E0E0;
+  background-position: center left;
+}
+.sp-user:hover .users-text h4 {
+  color: ;
+}
+#sp-promotion-wrapper {
+  background: url("../../images/presets/preset4/small.jpg") repeat scroll 0 0 transparent;
+}
+.vina_promotion button {
+  background: #f37331;
+  color: #fff;
+}
+.vina_promotion button:after {
+  background: #000;
+}
+.vina_promotion button:hover,
+.vina_promotion button:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+#sp-main-menu ul.level-0 > li:hover:after,
+#sp-main-menu ul.level-0 > li.active:after {
+  background: #f37331;
+}
+#sp-main-menu ul.level-0 > li:hover > a,
+#sp-main-menu ul.level-0 > li.active > a {
+  color: #fff;
+  background: #f37331;
+}
+#sp-main-menu ul >li:hover > a,
+#sp-main-menu ul >li.active > a {
+  background: #f37331;
+  color: #fff;
+}
+.module.highlighted {
+  background: #3498DB;
+}
+.module.highlighted a {
+  color: #fff !important;
+}
+.page-header {
+  color: #f37331;
+}
+.page-header a {
+  color: #f37331;
+}
+.progress-striped .bar {
+  background-color: #f37331;
+}
+#vina_about_us .carousel .item .incon_bg {
+  background: #f37331;
+}
+#vina_about_us .carousel .carousel-control {
+  color: #f37331;
+}
+#vina_about_us .carousel:hover .carousel-control:hover {
+  background: #f37331;
+}
+#vina_about_us .skill ul li {
+  border-left: 2px solid #f37331;
+}
+#vina_company .img-polaroid .info_team ul li a:hover {
+  background: #f37331;
+}
+#vina_pricing_table .pricing_table .thumbnail button {
+  background: #f37331;
+  color: #fff;
+}
+#vina_pricing_table .pricing_table .thumbnail button:after {
+  background: #000;
+}
+#vina_pricing_table .pricing_table .thumbnail button:hover,
+#vina_pricing_table .pricing_table .thumbnail button:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+#vina_contact_us .qlform .control-group .controls input[type="submit"] {
+  background: #f37331;
+  color: #fff;
+}
+#vina_contact_us .qlform .control-group .controls input[type="submit"]:after {
+  background: #000;
+}
+#vina_contact_us .qlform .control-group .controls input[type="submit"]:hover,
+#vina_contact_us .qlform .control-group .controls input[type="submit"]:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+#vina_contact_us ul.social li a {
+  border: 4px solid #fbd5c2;
+  background: #f37331;
+}
+#vina_contact_us ul.social li a:hover {
+  border: 4px solid #f37331;
+}
+#vina_contact_us ul.social li a:hover em {
+  color: #f37331;
+}
+#vina_contact_us .map span em {
+  color: #f37331;
+}
+#k2Container .itemDateCreated {
+  background: #f37331;
+}
+#k2Container .itemDateCreated:hover span.vina_m {
+  background: #f37331;
+}
+#k2Container .k2ReadMore {
+  background: #f37331;
+  color: #fff;
+}
+#k2Container .k2ReadMore:after {
+  background: #000;
+}
+#k2Container .k2ReadMore:hover,
+#k2Container .k2ReadMore:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+#k2Container.itemView h1.itemTitle {
+  color: #f37331;
+}
+#k2Container.itemView .vina-header-toolbar [class^="icon-"],
+#k2Container.itemView .vina-header-toolbar [class*=" icon-"] {
+  color: #f37331;
+}
+#k2Container.itemView .vina-header-toolbar a:hover {
+  color: #f37331;
+}
+#k2Container.itemView .itemHits {
+  background: #f37331;
+}
+#k2Container.itemView .itemBackToTop a:hover:before {
+  color: #f69461;
+}
+#k2Container.itemView .vina_item_last li:before {
+  color: #f37331;
+}
+#k2Container.itemView div.itemCommentsForm form input#submitCommentButton {
+  background: #f37331;
+  color: #fff;
+}
+#k2Container.itemView div.itemCommentsForm form input#submitCommentButton:after {
+  background: #000;
+}
+#k2Container.itemView div.itemCommentsForm form input#submitCommentButton:hover,
+#k2Container.itemView div.itemCommentsForm form input#submitCommentButton:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+#k2Container.itemView div.itemCommentsForm form input#submitCommentButton:hover,
+#k2Container.itemView div.itemCommentsForm form input#submitCommentButton:focus {
+  color: #fff;
+}
+.category .items-row .item .entry-meta.muted [class^="icon-"],
+.category .items-row .item .entry-meta.muted [class*=" icon-"] {
+  color: #f37331;
+}
+.vina-tag {
+  background: #f37331;
+  -webkit-box-shadow: 0 4px 0 0 #e4560d;
+  -moz-box-shadow: 0 4px 0 0 #e4560d;
+  box-shadow: 0 4px 0 0 #e4560d;
+}
+.vina-tag:hover {
+  background: #f37331 !important;
+}
+.vina-tag:before {
+  background: #f37331;
+  -webkit-box-shadow: 0 4px 0 0 #e4560d;
+  -moz-box-shadow: 0 4px 0 0 #e4560d;
+  box-shadow: 0 4px 0 0 #e4560d;
+}
+.vina-tag:after {
+  -webkit-box-shadow: 3px 3px 0 0 #e4560d inset;
+  -moz-box-shadow: 3px 3px 0 0 #e4560d inset;
+  box-shadow: 3px 3px 0 0 #e4560d inset;
+}
+.vina-icon ul li p:hover i {
+  color: #f37331;
+}
+.vina-online .header:before {
+  color: #f37331;
+}
+table.calendar tr td.calendarToday,
+table.calendar tr td.calendarTodayLinked,
+table.calendar tr td.calendarDateLinked a:hover {
+  background: #f37331;
+}
+.k2CategoriesListBlock li:before {
+  color: #f37331;
+}
+.k2CategoriesListBlock li:hover a {
+  color: #f37331;
+}
+#sp-breadcrumb-wrapper {
+  background: #f37331;
+}
+.vina-search input[type="text"]:active,
+.vina-search input[type="text"]:focus {
+  -webkit-box-shadow: inset 8px 0 0 #f37331;
+  -moz-box-shadow: inset 8px 0 0 #f37331;
+  box-shadow: inset 8px 0 0 #f37331;
+}
+.vina-search .k2SearchBlockForm .button {
+  background: #f37331;
+  color: #fff;
+}
+.vina-search .k2SearchBlockForm .button:after {
+  background: #000;
+}
+.vina-search .k2SearchBlockForm .button:hover,
+.vina-search .k2SearchBlockForm .button:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+.vina-search .k2SearchBlockForm .button:hover,
+.vina-search .k2SearchBlockForm .button:focus {
+  color: #fff;
+}
+.category-blogs .readmore {
+  background: #f37331;
+  color: #fff;
+}
+.category-blogs .readmore:after {
+  background: #000;
+}
+.category-blogs .readmore:hover,
+.category-blogs .readmore:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+#login-form input:not([type='checkbox']):active,
+#login-form input:not([type='checkbox']):focus {
+  -webkit-box-shadow: inset 8px 0 0 #f37331;
+  -moz-box-shadow: inset 8px 0 0 #f37331;
+  box-shadow: inset 8px 0 0 #f37331;
+}
+#login-form .btn {
+  background: #f37331;
+  color: #fff;
+}
+#login-form .btn:after {
+  background: #000;
+}
+#login-form .btn:hover,
+#login-form .btn:focus {
+  color: #f37331;
+  background-color: #f37331;
+}
+.icon-color:before {
+  color: #f37331;
+}
+.vina-news li:before {
+  color: #f37331;
+}
+#sp-bottom-wrapper:before {
+  background-color: #000;
+  background-image: linear-gradient(45deg,#f37331 25%,transparent 25%,transparent), linear-gradient(-45deg,#f37331 25%,transparent 25%,transparent), linear-gradient(45deg,transparent 100%,#f37331 100%), linear-gradient(-45deg,transparent 100%,#f37331 39%);
+}
+#sp-bottom-wrapper:after {
+  background-image: linear-gradient(180deg,#f37331 25%,transparent 25%,transparent), linear-gradient(-108deg,#f37331 25%,transparent 25%,transparent), linear-gradient(90deg,transparent 75%,#f37331 75%), linear-gradient(-180deg,transparent 75%,#f37331 75%);
+}
+#sp-bottom-wrapper h3,
+#sp-footer-wrapper h3 {
+  color: #fff;
+}
+#sp-bottom-wrapper a:not(.btn),
+#sp-footer-wrapper a:not(.btn) {
+  color: #f37331;
+}
+#sp-bottom-wrapper a:not(.btn):hover,
+#sp-footer-wrapper a:not(.btn):hover {
+  color: #e4560d;
+}
+#sp-bottom-wrapper a,
+#sp-footer-wrapper a {
+  color: #fff;
+}
+.vina-menubottom li a:hover {
+  color: #f37331 !important;
+}
+.vina-menu,
+.vina-menu-small {
+  background: #f37331 !important;
+}
+.sp-border {
+  border-top: 1px solid #531f05;
+}
+.sp-border::after {
+  background: #a53f0a;
+}
+.vina-btn {
+  background: #f37331;
+  color: #fff;
+}
+.vina-btn:after {
+  background: #000;
+}
+.vina-btn:hover,
+.vina-btn:focus {
+  color: #f37331;
+  background-color: #f37331;
+}

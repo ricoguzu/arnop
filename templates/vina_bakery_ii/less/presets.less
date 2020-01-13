@@ -1,0 +1,837 @@
+/**
+ * @package Vina Bakery
+ * @author VinaGecko.com http://VinaGecko.com
+ * @copyright Copyright (C) 2014 www.VinaGecko.com
+ * @license http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL
+*/
+
+@import 'variables';
+@import 'mixins';
+
+
+
+//Link color
+a:not(.btn) {
+	color: darken(@link_color,20%);
+	&:hover {
+	  color: @link_color;
+	}
+}
+.color-page {
+	color: @link_color;
+}
+
+body {
+	&.bg {
+
+	}
+}
+
+//Search
+#sp-search {
+	.search {
+		form {
+			#mod-search-searchword {
+				border: 5px solid @link_color;
+			}
+			input[type="text"]:focus {
+				box-shadow: 8px 0 0 @link_color inset;
+			}
+			.btn {
+				.vina-btn();
+				&:hover {
+					.icon-search {
+						color: @link_color;
+					}
+				}
+			}	
+		}
+	}
+}
+
+//top
+#sp-top-wrapper {
+	border-bottom: 2px solid @link_color;
+	.tcvn-header-top-marquee {
+		span.vina-br {
+			background: url("../../images/presets/@{preset}/vinabr.png") no-repeat;
+		}
+	}
+}
+
+//Social Icons
+.vina_social {
+	ul{
+		margin: 0;
+		a {
+			background: @link_color;
+			border: 4px solid lighten(@link_color,20%);
+			&:hover {
+				border: 4px solid @link_color;
+				em {
+					&:before {
+						color: @link_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//header
+#sp-header-wrapper {
+	
+	//Logo
+	.logo{
+		background-image:url(../../images/presets/@{preset}/logo.png);
+	}
+}
+
+#sp-feature-wrapper {
+	background-color: @link_color;
+	&.vina-feature {
+		&:before {
+			background-color: @white;
+			background-image: 
+				linear-gradient(45deg, @link_color 25%, transparent 25%, transparent),
+				linear-gradient(-45deg, @link_color 25%, transparent 25%, transparent),
+				linear-gradient(45deg, transparent 100%, @link_color 100%),
+				linear-gradient(-45deg, transparent 92%, @link_color 39%);
+		}
+		&:after {
+			background-image: linear-gradient(180deg,@link_color 25%,transparent 25%,transparent),
+							 linear-gradient(-108deg,@link_color 25%,transparent 25%,transparent),
+							 linear-gradient(90deg,transparent 75%,@link_color 75%), 
+							 linear-gradient(-180deg,transparent 75%,@link_color 75%);
+			background-color: transparent;
+		}
+	}
+}
+
+/*menu top*/
+.vina_mncontact {
+	li {
+		a {
+			color: @white ;
+			&:hover, &:focus {
+				color: @link_color;
+			}
+		}
+		&.active {
+			a {
+				color: @link_color;
+				&:hover, &:focus {
+					color: @link_color;
+				}
+			}
+		}
+	}
+}
+
+//slit slider
+.tcvn-slit-slider {
+	.sl-slider-wrapper {
+		h2 {
+			span {
+				color: @link_color;
+			}
+		}
+		.bg-img {
+			.slit-text {
+				.buttonlight.morebutton {
+					.vina-btn();
+				}
+			}
+		}
+		.nav-arrows {
+			span {
+				&.nav-arrow-prev {
+					background-image:url(../../images/presets/@{preset}/prev.png);
+					.rotate(0deg);
+					border: 0;
+					height: 56px;
+					width: 56px;
+					left: 2%;
+					&:hover {
+						background-image:url(../../images/presets/@{preset}/prev_hover.png);
+					}
+				}
+				&.nav-arrow-next {
+					background-image:url(../../images/presets/@{preset}/next.png);
+					.rotate(0deg);
+					border: 0;
+					height: 56px;
+					width: 56px;
+					right: 2%;
+					&:hover {
+						background-image:url(../../images/presets/@{preset}/next_hover.png);
+					}
+				}
+			}
+		}
+		.nav-dots {
+			span {
+				height: 23px;
+				width: 23px;
+				&.nav-dot-current {
+					&:after {
+						background-image:url(../../images/presets/@{preset}/button_hover.png);
+						height: 23px;
+						width: 23px;
+						left: 0;
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+/*Testimonal*/
+.vina-testimonal {
+	.carousel-control {
+		&.left,&.right {
+			background: @link_color;
+		}
+	}
+}
+
+//scroller slider
+.tcvn-scroller-k2 {
+	&.theme1 {
+		.toolbar {
+			.left, .right {
+				&:hover {
+					i {
+						&:before {
+							color: @link_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Subcribe to Newsletters */	
+.vina-subscribe {
+	.input-append {
+		.btn {
+			background: @black;
+			color: @white; 
+			&:after {
+				background: darken(@link_color,20%);
+			}
+			&:hover,&:focus {
+				color: @white;
+				background-color: @black;
+			}
+		}
+	}
+	input[type="text"]:focus {
+		box-shadow: 8px 0 0 @link_color inset;
+	}
+}
+
+//user
+
+.sp-user {
+	.ic {
+		.transition(background 0.3s);
+	}
+	.circle1 {
+		background: url("../../images/presets/@{preset}/user1.png") no-repeat @link_color;
+		background-position: center right;
+		.border-radius(50%);
+	}
+	.circle2 {
+		background: url("../../images/presets/@{preset}/user2.png") no-repeat @link_color;
+		background-position: center right;
+		.border-radius(50%);
+	}
+	.circle3 {
+		background: url("../../images/presets/@{preset}/user3.png") no-repeat @link_color;
+		background-position: center right;
+		.border-radius(50%);
+	}
+	.circle4 {
+		background: url("../../images/presets/@{preset}/user4.png") no-repeat @link_color;
+		background-position: center right;
+		.border-radius(50%);
+	}
+	.users-text {
+		h4 {
+			color: @link_color;
+		}
+	}
+	&:hover {
+		.circle1 {
+			background: url("../../images/presets/@{preset}/user1.png") no-repeat #E0E0E0;
+			background-position: center left;
+		}
+		.circle2 {
+			background: url("../../images/presets/@{preset}/user2.png") no-repeat #E0E0E0;
+			background-position: center left;
+		}
+		.circle3 {
+			background: url("../../images/presets/@{preset}/user3.png") no-repeat #E0E0E0;
+			background-position: center left;
+		}
+		.circle4 {
+			background: url("../../images/presets/@{preset}/user4.png") no-repeat #E0E0E0;
+			background-position: center left;
+		}
+		.users-text h4 {
+			color: @ColorCore1;
+		}
+	}
+}
+
+#sp-promotion-wrapper {
+	background: url("../../images/presets/@{preset}/small.jpg") repeat scroll 0 0 transparent;
+}
+
+/*vina promotion*/
+.vina_promotion {
+	button {
+		.vina-btn();
+	}
+}
+
+//main menu
+
+ #sp-main-menu {
+ 	ul {	
+		&.level-0 {
+			> li {
+				&:hover,
+				&.active {
+					&:after {
+						background: @link_color;
+					}
+					> a {
+						color: @white;
+						background: @link_color;
+					}
+				}
+			}
+		}
+	}
+	ul {
+		>li {
+			&:hover, &.active {
+				> a {
+					background: @link_color;
+					color: @white;
+				}
+			}
+		}
+	}
+}
+
+//Widgets
+.module {
+	&.highlighted {
+		background:#3498DB;
+		a{
+			color:#fff !important;
+		}
+	}
+}
+
+
+
+/** Joomla Content **/
+	.page-header {
+		color: @link_color;
+		a {
+			color: @link_color;
+		}
+	}
+	.progress-striped .bar {
+		background-color: @link_color;
+	}
+	#vina_about_us {
+		.carousel {
+			.item {
+				.incon_bg {
+					background: @link_color;
+				}
+			}
+			.carousel-control {
+				color: @link_color;
+			}
+			&:hover {
+				.carousel-control {
+					&:hover {
+						background: @link_color;
+					}
+				}
+			}
+		}
+		.skill {
+			ul {
+				li {
+					border-left: 2px solid @link_color;;
+				}
+			}
+		}
+	}
+	#vina_company {
+		.img-polaroid {
+			.info_team {
+				ul {
+					li {
+						a {
+							&:hover {
+								background: @link_color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#vina_pricing_table {
+		.pricing_table {
+			.thumbnail {
+				button {
+					.vina-btn();
+				}
+			}
+		}
+	}
+	#vina_contact_us {
+		.qlform {
+			.control-group {
+				.controls {
+					input[type="submit"] {
+						.vina-btn();	
+					}
+				}
+			}
+		}
+		ul.social {
+			li {
+				a {
+					border: 4px solid lighten(@link_color, 30%);
+					background: @link_color;
+					&:hover {
+						border: 4px solid @link_color;
+						em {
+							color: @link_color;
+						}
+					}
+				}
+			}
+		}
+		.map {
+			span {
+				em {
+					color: @link_color;
+				}
+			}
+		}
+	}
+	
+/** Joomla Content End **/
+
+/** K2 **/
+#k2Container {
+	.itemDateCreated  {
+		background: @link_color;
+		&:hover {
+			span {
+				&.vina_m {
+					background: @link_color;
+				}	
+			}
+		}
+	}
+	.k2ReadMore {
+		.vina-btn();
+	}
+	&.itemView {
+		h1.itemTitle {
+			color: @link_color;
+		}
+		.vina-header-toolbar {
+			[class^="icon-"], [class*=" icon-"] {
+				color: @link_color;
+			}
+			a:hover {
+				color: @link_color;
+			}
+		}
+		.itemHits {
+			background: @link_color;
+		}
+		.itemBackToTop {
+			a {
+				&:hover {
+					&:before {
+						color: lighten(@link_color,10%);
+					}
+				}
+			}
+		}
+		.vina_item_last {
+			li {
+				&:before {
+					color: @link_color;
+				}
+			}
+		}
+		div.itemCommentsForm {
+			form {
+				input{
+					&#submitCommentButton {
+						.vina-btn();
+						&:hover, &:focus {
+							color: @white;
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+/** Category View**/
+.category {
+	.items-row {
+		.item {
+			.entry-meta.muted {
+				[class^="icon-"], [class*=" icon-"] {
+					color: @link_color;
+				}
+			}
+		}
+	}
+}
+
+/*div.k2TagCloudBlock {
+	a.vina-tag {
+		background: lighten(@link_color, 40%);
+		&:hover {
+			background: @link_color;
+		}
+	}
+}*/
+
+.vina-tag {
+	background: @link_color;
+	.box-shadow(0 4px 0 0 darken(@link_color,10%));
+	&:hover {
+		background: @link_color !important;
+	}
+	&:before {
+		background: @link_color;
+		.box-shadow(0 4px 0 0 darken(@link_color,10%));
+	}
+	&:after {
+		.box-shadow(3px 3px 0 0 darken(@link_color,10%) inset);
+	}
+}
+
+.vina-icon {
+	ul {
+		li {
+			p {
+				&:hover {
+					i {
+						color: @link_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*who's online*/
+.vina-online {
+	.header {
+		&:before {
+			color: @link_color;
+		}
+	}
+}
+
+/*k2 tools*/
+
+/** Calendar **/
+table.calendar tr td.calendarToday ,table.calendar tr td.calendarTodayLinked ,table.calendar tr td.calendarDateLinked a:hover{
+	background: @link_color;
+}
+
+/*k2 categories*/
+.k2CategoriesListBlock {
+	li {
+		&:before {
+			color: @link_color;
+		}
+		&:hover {
+			a {
+				color: @link_color;
+			}
+		}
+	}
+}
+
+//Breadcrumb 
+#sp-breadcrumb-wrapper {
+	background: @link_color;
+}
+
+/*k2 search*/
+.vina-search {
+	input[type="text"] {
+		&:active,&:focus {
+			.box-shadow(inset 8px 0 0 @link_color);
+		}
+	}
+	.k2SearchBlockForm {
+		.button {
+			.vina-btn();
+			&:hover, &:focus {
+				color: @white;
+			}
+		}
+	}
+}
+
+/*category blogs*/
+.category-blogs {
+	.readmore {
+		.vina-btn();
+	}
+}
+
+/*end k2 tools*/
+#login-form {
+	input:not([type='checkbox']) {
+		&:active,&:focus {
+			.box-shadow(inset 8px 0 0 @link_color);
+		}
+	}
+	.btn {
+		.vina-btn();
+	}
+}
+
+.icon-color {
+	&:before {
+		color: @link_color;
+	}
+}
+
+
+/*vina news*/
+.vina-news {
+	li {
+		&:before {
+			color: @link_color;
+		}
+	}
+}
+#sp-bottom-wrapper {
+	&:before {
+		background-color: @black;
+		background-image: 
+			linear-gradient(45deg, @link_color 25%, transparent 25%, transparent),
+			linear-gradient(-45deg, @link_color 25%, transparent 25%, transparent),
+			linear-gradient(45deg, transparent 100%, @link_color 100%),
+			linear-gradient(-45deg, transparent 100%, @link_color 39%);
+	}
+	&:after {
+		background-image: linear-gradient(180deg,@link_color 25%,transparent 25%,transparent),
+		 linear-gradient(-108deg,@link_color 25%,transparent 25%,transparent),
+		 linear-gradient(90deg,transparent 75%,@link_color 75%), 
+		 linear-gradient(-180deg,transparent 75%,@link_color 75%);
+	}
+}
+
+#sp-bottom-wrapper,
+#sp-footer-wrapper {
+	h3{
+		color:@white;
+	}
+	
+	//Link
+	a:not(.btn){
+		color: @link_color;	 
+		&:hover{
+		   color:darken(@link_color,10%);
+		}
+	}
+	a {
+		color: @white;
+	}
+}
+//vina menu bottom
+.vina-menubottom {
+	li {
+		a {
+			&:hover {
+				color: @link_color !important;
+			}
+		}
+	}
+}
+
+//
+
+.vina-menu, .vina-menu-small {
+	background: @link_color !important;
+}
+
+.sp-border {
+	border-top:1px solid darken(@link_color, 40%);
+	&::after {
+		background:darken(@link_color, 23%);
+	}
+}
+
+//vina button
+.vina-btn {
+	background: @link_color;
+	color: @white;
+	&:after {
+		background: @black;
+	}
+	&:hover,&:focus {
+		color: @link_color;
+		background-color: @link_color;
+	}
+}
+
+
+
+/*Buttons*/
+.btn-primary, button, input[type='submit'], input[type='button'], submit {
+	.btn-primary(spin(@link_color, 10%));
+}
+
+.vina-camera-slider {
+	.camera_caption {
+		h2 {
+			span {
+				color: @link_color;
+			}
+		}
+		.slit-text {
+			.buttonlight.morebutton {
+				.vina-btn();
+			}
+		}
+	}
+	.camera_fakehover {
+		.camera_prev {
+			background:url(../../images/presets/@{preset}/prev.png) !important;
+			.rotate(0deg);
+			border: 0;
+			height: 56px;
+			width: 56px;
+			left: 2%;
+			span {
+				display: none !important;
+			}
+			&:hover {
+				background:url(../../images/presets/@{preset}/prev_hover.png);
+			}
+		}
+		.camera_next {
+			background:url(../../images/presets/@{preset}/next.png) !important;
+			.rotate(0deg);
+			border: 0;
+			height: 56px;
+			width: 56px;
+			right: 2%;
+			span {
+				display: none !important;
+			}
+			&:hover {
+				background:url(../../images/presets/@{preset}/next_hover.png) !important;
+			}
+		}
+	}
+	.camera_wrap {
+		margin: 0 !important;
+		.camera_pag {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			.camera_pag_ul {
+				li{
+					background: transparent;
+					height: 23px !important;
+					width: 23px !important;
+					background: rgba(150, 150, 150, 0.1) none repeat scroll 0 0 !important;
+					box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 0 0 2px rgba(255, 255, 255, 0.5);
+					margin: 6px !important;
+					transition: all 0.2s ease 0s;
+					.border-radius(50% !important); 
+					position: relative !important;
+					span {
+						display: none;
+					}
+					&.cameracurrent, &:hover {
+						box-shadow: none;
+						&:after {
+							content: "";
+							background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0 !important;
+							background-image:url(../../images/presets/@{preset}/button_hover.png) !important;
+							box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 0 0 5px rgba(255, 255, 255, 0.5);
+							height: 23px;
+							width: 23px;
+							left: 0;
+							top: 0;
+							.border-radius(50%); 
+							position: absolute;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//scroller slider
+.vina-carousel-k2 {
+	.text-block {
+		h3 {
+			a {
+				color: #999999 !important;
+				font-family: "PT Sans Narrow",sans-serif;
+				font-size: 18px;
+				font-weight: normal;
+				margin: 0;
+				text-decoration: none;
+				width: 100%;
+				&:hover {
+					color: @link_color !important;
+				}
+			}
+		}
+	}
+	.owl-controls {
+		.owl-buttons {
+			.owl-prev, .owl-next {
+				&:hover {
+					i {
+						&:before {
+							color: @link_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.vina-ticker-k2 { 
+	&:before {
+		background: url("../../images/presets/@{preset}/vinabr.png") no-repeat;
+	}
+}

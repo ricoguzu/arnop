@@ -1,0 +1,57 @@
+/*
+# ------------------------------------------------------------------------
+# Vina Item Ticker for K2 for Joomla 3
+# ------------------------------------------------------------------------
+# Copyright(C) 2014 www.VinaGecko.com. All Rights Reserved.
+# @license http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL
+# Author: VinaGecko.com
+# Websites: http://vinagecko.com
+# Forum: http://vinagecko.com/forum/
+# ------------------------------------------------------------------------
+*/
+.vina-ticker-k2 .header-block {
+	position: relative;
+}
+.vina-ticker-k2  .vina-items,
+.vina-ticker-k2  .vina-item {
+	max-width: 100%;
+}
+.vina-ticker-k2 .header-block h3 {
+	padding: 0;
+	margin: 0;
+}
+.vina-ticker-k2 .header-block span {
+	height: 24px;
+	cursor: pointer;
+}
+.vina-ticker-k2 .header-block span.up {
+	background: url("../images/left-white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    text-indent: 10000px;
+    overflow: hidden;
+    position: absolute;
+    width: 16px;
+	right: 60px;
+}
+.vina-ticker-k2 .header-block span.down {
+	background: url("../images/right-white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    text-indent: 10000px;
+    overflow: hidden;
+    position: absolute;
+    width: 16px;
+	right: 0px;
+}
+.vina-ticker-k2 .header-block span.toggle {
+	background: url("../images/play-white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    text-indent: 10000px;
+    overflow: hidden;
+    position: absolute;
+    width: 20px;
+	right: 28px;
+}
+.vina-ticker-k2 .header-block span.toggle.et-run {
+	background: url("../images/pause-white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.vina-ticker-k2 .text-block h4 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}

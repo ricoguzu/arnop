@@ -1,0 +1,141 @@
+/**
+ * @package Vina Bakery
+ * @author VinaGecko.com http://VinaGecko.com
+ * @copyright Copyright (C) 2014 www.VinaGecko.com
+ * @license http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL
+*/
+
+//module variation
+.module {
+	margin-top:20px;
+	&:first-child{
+		margin-top:0;
+	}
+	h3 {
+		font-size:24px;
+		font-weight:400;
+		margin:0 0 10px 0;
+	}
+	
+	&.highlighted,
+	&.orange,
+	&.dark,
+	&.green,
+	&.maroon,
+	&.blue,
+	&.gray,
+	&.pink,
+	&.red {
+		h3 {
+			padding:0 0 10px 0;
+			border-bottom:1px dashed @white;
+			color:@white;
+		}
+		padding:20px;
+		color:@white;
+		.border-radius(4px);
+		.box-shadow(0 1px 5px rgba(0,0,0,.6) inset);
+	}
+	
+	&.orange {
+		background:@orange;
+		a{
+		 color:#B66B00;
+			 
+		&:hover{
+			   color:#6F4100;
+			   }
+		}
+	}
+	
+	&.dark {
+		background:@black;
+		a{
+		 color:#777;
+			 
+		&:hover{
+			   color:#888;
+			   }
+		}
+	}
+	&.green {
+		background:@green;
+		a{
+		 color:#63E063;
+			 
+		&:hover{
+			   color:#43F043;
+			   }
+		}
+	}
+	&.maroon {
+		background:#F35D34;
+		a{
+		 color:#B4300D;
+			 
+		&:hover{
+			   color:#C93F19;
+			   }
+		}
+	}
+	&.blue {
+		background:@blue;
+		a{
+		 color:#47C9FF;
+			 
+		&:hover{
+			   color:#0073A3;
+			   }
+		}
+	}
+	&.gray {
+		background:@gray;
+		a{
+		 color:#999;
+			 
+		&:hover{
+			   color:#777;
+			   }
+		}
+	}
+	&.pink {
+		background:@pink;
+		a{
+		 color:#FF5C8F;
+			 
+		&:hover{
+			color:#FA2E6E;
+		   }
+		}
+	}	
+	&.vina_social {
+		padding-right: 20px;
+		margin-top: 16px;
+	}
+	&.user {
+		padding: 26px 0 29px;
+	}
+	&.vina_collections {
+		background: @white;
+		overflow: hidden;
+		.header {
+			margin-top: 20px;
+		}
+	}
+	&.red {
+		background:@red;
+		a{
+		 color:#EE4538;
+			 
+		&:hover{
+			   color:#DA3F33;
+			   }
+		}
+	}
+	&.sp-position {
+		h3 {
+			border-bottom: 1px solid #ECECEC;
+			padding-bottom: 10px;
+		}
+	}
+}
